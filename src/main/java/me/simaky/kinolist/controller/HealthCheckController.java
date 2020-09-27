@@ -9,4 +9,9 @@ public class HealthCheckController {
     public String healthCheck() {
         return "ok";
     }
+
+    @GetMapping("/hh")
+    public String healthCheck2() {
+        return "hh";
+    }
 }
