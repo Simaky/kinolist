@@ -1,4 +1,4 @@
-package me.simaky.kinolist.service;
+package me.simaky.kinolist.service.impl;
 
 import me.simaky.kinolist.dto.KinolistUserPrincipal;
 import me.simaky.kinolist.model.User;
