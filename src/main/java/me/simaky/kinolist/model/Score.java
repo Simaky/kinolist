@@ -5,12 +5,10 @@ import lombok.Data;
 import me.simaky.kinolist.model.id.ScoreId;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity(name = "score")
 @Data
-public class Score implements Serializable {
-
+public class Score {
     @EmbeddedId
     private ScoreId id;
 
