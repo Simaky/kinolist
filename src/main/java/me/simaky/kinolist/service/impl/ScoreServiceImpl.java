@@ -44,23 +44,21 @@ public class ScoreServiceImpl implements ScoreService {
     }
 
     @Override
-    public ScoreDto save(ScoreDto scoreDto) throws Exception {
-        User user = userRepository.findById(scoreDto.getUserId()).orElse(null);
+    public ScoreDto save(ScoreDto scoreDto, Long userId, Long filmId) throws Exception {
+        User user = new User();
+        user.setId(userId);
 
-        Film film = filmRepository.findById(scoreDto.getFilmId()).orElse(null);
-
-        ScoreId scoreId = new ScoreId();
-        scoreId.setUserId(user.getId());
-        scoreId.setFilmId(film.getId());
+        Film film = new Film();
+        film.setId(filmId);
 
         Score score = new Score();
-        score.setId(scoreId);
+        score.setUser(user);
+        score.setFilm(film);
         score.setCurrentState(scoreDto.getCurrentState());
         score.setRating(scoreDto.getRating());
 
         //TODO add validation
         scoreRepository.save(score);
-        scoreRepository.
 
         return scoreDto;
     }

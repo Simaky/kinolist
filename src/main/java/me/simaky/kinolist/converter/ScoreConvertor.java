@@ -1,5 +1,6 @@
 package me.simaky.kinolist.converter;
 
+import me.simaky.kinolist.dto.ScoreDto;
 import me.simaky.kinolist.dto.UserFilmScoreDto;
 import me.simaky.kinolist.model.Score;
 import org.springframework.util.CollectionUtils;
@@ -14,10 +15,12 @@ public class ScoreConvertor {
             return null;
         }
         UserFilmScoreDto dto = new UserFilmScoreDto();
+        ScoreDto scoreDto = new ScoreDto();
 
-        dto.setCurrentState(score.getCurrentState());
-        dto.setRating(score.getRating());
+        scoreDto.setCurrentState(score.getCurrentState());
+        scoreDto.setRating(score.getRating());
 
+        dto.setScore(scoreDto);
         dto.setName(score.getFilm().getName());
         dto.setSeriesCount(score.getFilm().getSeriesCount());
         dto.setDescription(score.getFilm().getDescription());

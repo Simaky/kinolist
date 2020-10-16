@@ -9,6 +9,5 @@ public class UserFilmScoreDto {
     private String imageUrl;
     private Integer seriesCount;
 
-    private Integer rating;
-    private Integer currentState;
+    private ScoreDto score;
 }

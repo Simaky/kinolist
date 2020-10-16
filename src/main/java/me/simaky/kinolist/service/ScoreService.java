@@ -8,5 +8,5 @@ import java.util.List;
 public interface ScoreService {
     List<UserFilmScoreDto> getFilmListForUser(Long userId);
 
-    ScoreDto save(ScoreDto score) throws Exception;
+    ScoreDto save(ScoreDto score, Long userId, Long filmId) throws Exception;
 }

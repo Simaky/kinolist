@@ -22,15 +22,16 @@ public class ScoreController {
         this.scoreService = scoreService;
     }
 
-    @GetMapping("/scores/{id}")
-    public List<UserFilmScoreDto> scoresByUserId(@Valid @PathVariable Long id) {
-        return scoreService.getFilmListForUser(id);
+
+    @GetMapping("users/{userId}/films")
+    public List<UserFilmScoreDto> scoresByUserId(@Valid @PathVariable Long userId) {
+        return scoreService.getFilmListForUser(userId);
     }
 
-    @PostMapping("/scores")
-    public ScoreDto scoresByUserId(@Valid @RequestBody ScoreDto scoreData) {
+    @PostMapping("users/{userId}/films/{filmId}/scores")
+    public ScoreDto scoresByUserId(@Valid @RequestBody ScoreDto scoreData, @PathVariable Long userId, @PathVariable Long filmId) {
         try {
-            return scoreService.save(scoreData);
+            return scoreService.save(scoreData, userId, filmId);
         } catch (Exception e) {
             throw new ApiException(400, e.getMessage());
         }

@@ -6,18 +6,18 @@ import me.simaky.kinolist.model.id.ScoreId;
 
 import javax.persistence.*;
 
-@Entity(name = "score")
 @Data
+@Entity(name = "score")
+@IdClass(ScoreId.class)
 public class Score {
-    @EmbeddedId
-    private ScoreId id;
-
+    @Id
     @ManyToOne(fetch = FetchType.LAZY)
-    @MapsId("filmId")
+    @JoinColumn(name = "film_id")
     private Film film;
 
+    @Id
     @ManyToOne(fetch = FetchType.LAZY)
-    @MapsId("userId")
+    @JoinColumn(name = "user_id")
     private User user;
 
     private Integer rating;
