@@ -8,6 +8,6 @@ import java.io.Serializable;
 @Embeddable
 @Data
 public class ScoreId implements Serializable {
-    private Long filmId;
-    private Long userId;
+    private Long film;
+    private Long user;
 }
