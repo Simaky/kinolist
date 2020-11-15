@@ -22,4 +22,5 @@ public class Score {
 
     private Integer rating;
     private Integer currentState;
+
 }
