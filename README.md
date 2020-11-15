@@ -1,1 +1,2 @@
-# Kinolist-Backend Java, Spring, Maven, MySQL
+# Kinolist-Backend
+Java, Spring, Maven, MySQL
