@@ -19,6 +19,7 @@ public class ScoreConvertor {
 
         scoreDto.setCurrentState(score.getCurrentState());
         scoreDto.setRating(score.getRating());
+        scoreDto.setIsRecommended(score.getIsRecommended());
 
         dto.setScore(scoreDto);
         dto.setName(score.getFilm().getName());

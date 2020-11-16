@@ -67,6 +67,7 @@ public class ScoreServiceImpl implements ScoreService {
         score.setFilm(film);
         score.setCurrentState(userFilmScoreDto.getScore().getCurrentState());
         score.setRating(userFilmScoreDto.getScore().getRating());
+        score.setIsRecommended(userFilmScoreDto.getScore().getIsRecommended());
 
         validate(score);
         Score saved = scoreRepository.save(score);
@@ -83,6 +84,7 @@ public class ScoreServiceImpl implements ScoreService {
 
         dbScore.setCurrentState(score.getCurrentState());
         dbScore.setRating(score.getRating());
+        dbScore.setIsRecommended(score.getIsRecommended());
 
         validate(dbScore);
         scoreRepository.save(dbScore);

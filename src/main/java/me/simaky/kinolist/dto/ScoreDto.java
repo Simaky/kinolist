@@ -6,4 +6,5 @@ import lombok.Data;
 public class ScoreDto {
     private Integer rating;
     private Integer currentState;
+    private Boolean isRecommended;
 }
