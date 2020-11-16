@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hopeful-kingdom-295819",
+  "private_key_id": "1c01010e147480b403a99146c61f74c0e2dc083e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDBGfbNARNfwpGF\nTTzTmheuedDAqUYi4vkcQ5925H9bBcOK700gecFfQ0jI/v3b9jPXUqYKhD4c7NG9\nMh709x5J83tWjYE+ZpByEWP4urBK+NZSkPP18pNdtfktG2mqGO5yV9ngBlHvxq3p\nfUGMeLbRl/rMphFuka58lkeqfr83ZsBJNtXqiOkGR40WxliTNaJWP+J6bDc82CPx\nlwNCP9lyI8OKwJCdNO9fFwI+AT7NN/fWJ6rWXN9hGqcs5PsHPwsaAYSkfXlMc0G2\n8SEoDhikawDHOM+RyxBwrZCS2BbB2kLgeTfxaEZ9V4jWZ/Tal6NilVFX0Fv5mwuE\nhh3g/oArAgMBAAECggEABornKk4BhoqUnKQfzfmYGNDGymhR2IfBMfx2kDQwvnhF\nBlWSUundK+mfMzQ0jLncSszhlFSjuB4sAxGKK/mdfJrz0FxuBxu5hCvjq79Djt68\ngEKqCWjFJnUucqFNpLZAif5BAw6jwxCDvvf/+w7x/sr78+giihEEjPMYjYXK28kf\nv/3bHVjlDQi+A9WeFL7zFp62UEX0rLdQ0K41J33hntwhEb8Lp4as+rgy3mbcQ4qq\ngoiPf98uBqYEXn2kta/fGmLO/Rbx5wKh0/CtmVUyxCifcQys0XEyil7w4BR6kVRU\nCSm3Qe1IQFDRxLPaZKfU/CZSXxw2fYDuibCoLgOs/QKBgQD/MzIF3JXAW8avzdfE\nIOzqEJqqM0Jzqow29wgN1JcmrybI4CQ0m81wIq8g4XBb/P4IWqifnCy78VqaQRZK\nbR+UgCpDof/qwj/XUG1sxJb3YvJ8TE1CHg4ytinJ/XEjjqezUnV9MPD5C+vXTT8r\nuq81EuXKYSfg9ZVSd80bjjJ0hQKBgQDBtO7WfL3oK3p1zcmjrixgs6eIhWNqJQ+g\nMkxXK7WZBjsSFaTJdudaLrk0702JtLzl8rKESfZGY5ULpuupeUGONKCBhp6lUI1c\nJ2SSbz+MjIl0FtXktm5MZgKCCqsRqJL1THGNQPOQW3MteCPf83AcOjTbXPe6+fGK\n3L1ns15Y7wKBgEhqmaZKKwBzypS2n6SbBz+ASLNFanTyD2nFfbaW/fFPQH0+BWgc\nUhag8PsunbisuNVcDH+GTLdkTKZ7E7046/4yxEt+2+UdDAqoWvTDcGdw34hgCohZ\niQPg50jXL1S8tV/QZWCKE8dIF7t3wxZAmllALI7aNPvEFIRbVIueNTkVAoGBAJmc\nJOa8h1DM4dD3v1ZosdKBxXJy7PJor2qHWJisFddi5Icj2MjW3QJcGQ0MVD3GsSHd\nA4n6qS0KnVBfL3T2rnDZ9QqiOb65EVCqAIxLYmbPr9T6ouY7cV5uasC7OwvG1btm\nwomUn1Gz47OEGVboUthfpDjtEZsZyF0pTZ4l1MTLAoGAAYZtDWefcJF34C8bHarW\nTYrndeSilLmenLw6mRpJgBmP7NN7tox8WbMIl3PwI/To+43d9YPGxA7jWL7WUq/U\n7IPBe+UnamyMTCCeROs+oc9lqwuk0zys+hW8J7TiJKnwjhGuvHoSheacfEAqpTmp\n2g3UuDwSs2LhYmhruDFWuH0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "db-connection@hopeful-kingdom-295819.iam.gserviceaccount.com",
+  "client_id": "112711713975585538532",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/db-connection%40hopeful-kingdom-295819.iam.gserviceaccount.com"
+}
