@@ -9,5 +9,5 @@ public interface FilmService {
 
     Film findFilmById(Long id);
 
-    Film save(Film film) throws Exception;
+    Film save(Film film);
 }

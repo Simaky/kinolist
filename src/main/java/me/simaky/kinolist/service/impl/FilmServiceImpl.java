@@ -27,7 +27,7 @@ public class FilmServiceImpl implements FilmService {
     }
 
     @Override
-    public Film save(Film film) throws Exception {
+    public Film save(Film film){
         //TODO add validation
         return filmRepository.save(film);
     }

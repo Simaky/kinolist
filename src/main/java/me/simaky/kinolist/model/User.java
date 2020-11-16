@@ -20,7 +20,7 @@ public class User {
     private String firstName;
     private String lastName;
 
-    @OneToMany(mappedBy = "film", orphanRemoval = true)
+    @OneToMany(mappedBy = "user", orphanRemoval = true, fetch = FetchType.LAZY)
     @ToString.Exclude
     private List<Score> scoreList = new ArrayList<>();
 }

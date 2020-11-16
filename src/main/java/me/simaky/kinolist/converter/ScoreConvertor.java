@@ -19,12 +19,15 @@ public class ScoreConvertor {
 
         scoreDto.setCurrentState(score.getCurrentState());
         scoreDto.setRating(score.getRating());
+        scoreDto.setIsRecommended(score.getIsRecommended());
 
         dto.setScore(scoreDto);
         dto.setName(score.getFilm().getName());
         dto.setSeriesCount(score.getFilm().getSeriesCount());
+        dto.setMediaType(score.getFilm().getMediaType());
         dto.setDescription(score.getFilm().getDescription());
         dto.setImageUrl(score.getFilm().getImageUrl());
+        dto.setFilmId(score.getFilm().getId());
 
         return dto;
     }
