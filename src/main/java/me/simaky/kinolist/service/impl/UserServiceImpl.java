@@ -40,27 +40,29 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto editUserById(Long id, UserDto userDto) throws RuntimeException {
-        User dbUser = userRepository.findFirstByUsername(userDto.getUsername());
-        if (dbUser != null && !dbUser.getUsername().equals(userDto.getUsername())) {
-            throw new ApiException(HttpServletResponse.SC_BAD_REQUEST, String.format("user with '%s' username already exist", userDto.getUsername()));
-        }
-        dbUser = userRepository.findFirstByEmail(userDto.getEmail());
-        if (dbUser != null && !dbUser.getEmail().equals(userDto.getEmail())) {
-            throw new ApiException(HttpServletResponse.SC_BAD_REQUEST, String.format("user with '%s' email already exist", userDto.getEmail()));
-        }
-
-        dbUser = userRepository.findFirstById(userDto.getId());
-        if (dbUser == null) {
+        User currentUser = userRepository.findFirstById(userDto.getId());
+        if (currentUser == null) {
             throw new ApiException(HttpServletResponse.SC_BAD_REQUEST, String.format("user with '%s' id is not exist", userDto.getId()));
         }
 
-        dbUser.setEmail(userDto.getEmail());
-        dbUser.setUsername(userDto.getUsername());
-        dbUser.setFirstName(userDto.getFirstName());
-        dbUser.setLastName(userDto.getLastName());
+        User dbUser = userRepository.findFirstByUsername(userDto.getUsername());
+        if (dbUser != null && !currentUser.getUsername().equals(userDto.getUsername())) {
+            throw new ApiException(HttpServletResponse.SC_BAD_REQUEST, String.format("user with '%s' username already exist", userDto.getUsername()));
+        }
 
-        userRepository.save(dbUser);
-        return UserConverter.toDto(dbUser);
+        dbUser = userRepository.findFirstByEmail(userDto.getEmail());
+        if (dbUser != null && !currentUser.getEmail().equals(userDto.getEmail())) {
+            throw new ApiException(HttpServletResponse.SC_BAD_REQUEST, String.format("user with '%s' email already exist", userDto.getEmail()));
+        }
+
+
+        currentUser.setEmail(userDto.getEmail());
+        currentUser.setUsername(userDto.getUsername());
+        currentUser.setFirstName(userDto.getFirstName());
+        currentUser.setLastName(userDto.getLastName());
+
+        userRepository.save(currentUser);
+        return UserConverter.toDto(currentUser);
     }
 
     @Override
